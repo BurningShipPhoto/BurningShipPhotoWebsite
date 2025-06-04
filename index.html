@@ -3,15 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>Burning Ship Photography</title>
-</head>
-<body>
-  <h1>Welcome to Burning Ship Photography</h1>
-  <p>Graduation and Engagement Photography in North Carolina.<br>Based in Raleigh.</p>
-</body>
-</html>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Burning Ship Photography</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Burning Ship Photography</h1>
+      <p>Capturing Bold Moments for Graduates and Couples</p>
+      <a href="#contact" class="btn">Book a Session</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I’m [Your Name], a North Carolina-based photographer who specializes in graduation and engagement photography. I believe in capturing real, unfiltered stories — the ones you’ll never want to forget.</p>
+  </section>
+
+  <section class="gallery">
+    <h2>Portfolio Highlights</h2>
+    <div class="gallery-grid">
+      <img src="images/photo1.jpg" alt="Sample 1">
+      <img src="images/photo2.jpg" alt="Sample 2">
+      <img src="images/photo3.jpg" alt="Sample 3">
+    </div>
+    <a href="#contact" class="btn">View Full Portfolio</a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Let's create something unforgettable together. Reach out to book your session!</p>
+    <a href="mailto:burningshipphotography@gmail.com" class="btn">Email Me</a>
+  </section>
+
+<footer>
+  <p>© <span id="year"></span> Burning Ship Photography</p>
+</footer>
+
+<script>
+  // Automatically set the year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

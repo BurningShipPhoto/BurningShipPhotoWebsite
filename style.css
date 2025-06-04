@@ -1,16 +1,72 @@
 body {
+  margin: 0;
+  font-family: 'Georgia', serif;
   background-color: #1a1a1a;
   color: #eee;
-  font-family: 'Georgia', serif;
+}
+
+.hero {
+  height: 100vh;
+  background: url('images/your-background.jpg') center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 100px 20px;
 }
 
-h1 {
-  color: #d6a95b; /* gold accent */
+.hero-content h1 {
   font-size: 3rem;
+  color: #d6a95b;
 }
 
-p {
-  font-size: 1.2rem;
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #d6a95b;
+  color: #111;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.about, .gallery, .contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-grid img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #444;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #111;
+  font-size: 0.9rem;
+  color: #aaa;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+footer:hover {
+  background-color: #1a1a1a;
+  color: #d6a95b; /* Soft gold on hover */
 }
