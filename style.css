@@ -1,0 +1,16 @@
+body {
+  background-color: #1a1a1a;
+  color: #eee;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+h1 {
+  color: #d6a95b; /* gold accent */
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
