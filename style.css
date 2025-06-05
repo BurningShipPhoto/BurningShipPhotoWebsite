@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background-color: #f8f1ea;
+  background-color: #ecfcfc;
   color: #000000;
 }
 
@@ -15,19 +15,19 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  background: linear-gradient(135deg, #e5ac8b 0%, #f3b251 100%);
+  font-size: 3.5rem;
+  background: linear-gradient(to bottom, #2f5477, #033360); /* Deep ship blue gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin-bottom: 20px;
-
-   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* subtle soft shadow */
+  text-shadow:
+    0 0 10px #ff4500,   /* orange glow */
 }
 
 .hero-content p {
   font-size: 1.5rem;
-  background: linear-gradient(135deg, #f7f3ef 0%, #e0c499 100%);
+  background: linear-gradient(135deg, #f7f3ef 0%, #91daf4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -67,7 +67,7 @@ body {
 }
 
 .btn {
-  background: linear-gradient(135deg, #d68a5b 0%, #d3bb94 100%); /* Gradient */
+  background: linear-gradient(135deg, #6797e4 0%, #94add3 100%); /* Gradient */
   color: #000000;
   padding: 12px 30px;
   text-decoration: none;
@@ -104,6 +104,8 @@ body {
   left: 100%;
   opacity: 1;
 }
+
+
 
 .about, .gallery, .contact {
   padding: 60px 20px;
@@ -142,7 +144,33 @@ footer {
   transition: background-color 0.3s, color 0.3s;
 }
 
-footer:hover {
-  background-color: #1a1a1a;
-  color: #d68a5b; /* Soft gold on hover */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 30px auto;
+  gap: 20px;
 }
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 2px solid #ececec;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+   background: linear-gradient(135deg, #6797e4 0%, #94add3 100%); /* Gradient */
+  color: #000;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(135deg, #6c96d9 0%, #5785ca 100%)
+}w

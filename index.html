@@ -5,7 +5,9 @@
   <title>Burning Ship Photography</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+
+</body>
 
   <section class="hero">
     <div class="hero-content">
@@ -30,11 +32,17 @@
     <a href="#contact" class="btn">View Full Portfolio</a>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Let's create something unforgettable together. Reach out to book your session!</p>
-    <a href="mailto:burningshipphotography@gmail.com" class="btn">Email Me</a>
-  </section>
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Let's create something unforgettable together. Reach out to book your session!</p>
+  
+  <form action="https://formspree.io/f/movwvrrk" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
 
 <footer>
   <p>© <span id="year"></span> Burning Ship Photography</p>
